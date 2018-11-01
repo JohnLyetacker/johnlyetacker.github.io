@@ -1,19 +1,25 @@
 "use strict";
 var login, password;
 
-login=prompt('Введите логин', ' ');
+login=prompt('Введите логин', '');
 
-if (login==null) {
-	alert('Вход отменён');
-} else if (login=='Админ') {
-	password=prompt('Введите пароль');
-	if (password=='123'){
-		alert('Добро пожаловать!');
-	} else if (password==null) {
+switch (login) {
+	case null :
 		alert('Вход отменён');
-	} else {
-		alert('Пароль неверен');
-	}
-} else {
-	alert('Я вас не знаю');
+		break;
+	case 'Админ' :
+		prompt('Введите пароль', '');
+		switch (password) {
+			case null :
+  				alert('Вход отменён');
+  				break;
+  			case '123' :
+  				alert('Добро пожаловать!');
+  				break;
+			default :
+				alert('Пароль неверен');
+		}
+		break;
+	default :
+		alert('Я вас не знаю');
 }
