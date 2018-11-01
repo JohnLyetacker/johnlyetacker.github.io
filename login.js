@@ -8,7 +8,7 @@ switch (login) {
 		alert('Вход отменён');
 		break;
 	case 'Админ' :
-		prompt('Введите пароль', '');
+		password=prompt('Введите пароль', '');
 		switch (password) {
 			case null :
   				alert('Вход отменён');
