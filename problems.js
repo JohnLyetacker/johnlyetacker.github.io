@@ -1,4 +1,4 @@
 "use strict";
 
-var date = new Date ();
+var date = new Date();
 alert(date);
