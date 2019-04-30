@@ -19,3 +19,13 @@ menu {
     border: 3px solid #a3c6fa;
     background-color: rgb(102, 235, 208);
 }
+
+body {
+    background-image: url(radioactive.svg);
+}
+
+.welcome {
+    background-image: url(gay.svg);
+    padding: 20px;
+    color: rgb(68, 0, 255);
+}
