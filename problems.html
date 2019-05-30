@@ -4,23 +4,27 @@
 <head>
 	<title>Текущая задача в js.</title>
 	<meta charset="utf-8">
-	<link type="text/css" rel="stylesheet" href="style.css">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.ico">
 </head>
 
 <body>
 	<script async src="problems.js"></script>
-	<p class="welcome">Добро пожаловать.</p>
-		<menu>Меню:
-		<ul>
-			<li><a href="index.html">Главная страница</a></li>
-			<li><a href="random/randomDickPage.html">Рандомизатор хуёв</a></li>
-			<li>Решить текущую задачу</li>
-		</ul>
-		</menu>
-	<img src="congrats.svg" width="100" title="Поздравления" class="image">
-	<p class="congrats">Задача решена!</p>
-
+	<div class="wrapper">
+		<header>Добро пожаловать.</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Главная страница</a></li>
+				<li><a href="random/randomDickPage.html">Рандомизатор хуёв</a></li>
+				<li><strong>Решить текущую задачу</strong></li>
+			</ul>
+		</nav>
+		<img src="svg/congrats.svg" width="100" title="Поздравления" class="image">
+		<p class="congrats">Задача решена!</p>
+	</div>
+	<div class="footer-wrapper">
+		<footer>Copyright: <a href="mailto:crosssince2007@yandex.ru">John Lyetacker</a></footer>
+	</div>
 </body>
 
 </html>
