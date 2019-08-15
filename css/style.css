@@ -62,10 +62,31 @@ nav a {
 
 body {
     background-color: gray;
+    font-family: calibri;
+}
+
+p {
+    background-color: rgb(0, 0, 0, 0.2);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    width: auto; 
+    height: auto; 
+    min-width: 0px; 
+    max-width: none; 
+    min-height: 0px; 
+    max-height: none; 
+    margin: 0px 0px; 
+    display: block; 
+    text-align: inherit; 
+    align-self: stretch; 
+    order: 0; 
+    flex-basis: auto; 
+    flex-grow: 1;
 }
 
 footer {
-    background-image: url(../svg/gay.svg);
+    /* background-image: url(../svg/gay.svg); */
+    background-color: rgb(0, 0, 0, 0.4);
     padding: 20px;
     color: rgb(0, 0, 0);
     width: auto; 
@@ -74,7 +95,7 @@ footer {
     max-width: none; 
     min-height: 0px; 
     max-height: none; 
-    margin: 15px 0px; 
+    margin: 0px 0px; 
     display: block; 
     text-align: inherit; 
     align-self: stretch; 
@@ -93,4 +114,5 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-direction: column-reverse;
+    padding: 0px;
 }
