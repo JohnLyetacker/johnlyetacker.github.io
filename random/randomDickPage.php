@@ -33,7 +33,7 @@
                 echo ($dick[rand(0, count($dick)-1)]);
 			?>
 		</p>
-		<img src="schlong.svg" width="100" class="image">
+		<!-- <img src="schlong.svg" width="100" class="image"> -->
 	</div>
 	<div class="footer-wrapper">
 		<footer>Copyright: <a href="mailto:crosssince2007@yandex.ru">John Lyetacker</a></footer>
