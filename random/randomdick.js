@@ -1,19 +1,11 @@
-
-
-var dick = ['Чёрный',
-    'Азиатский',
-    'Европейский',
-    'Мексиканский',
-    'Классический',
+// "use straight";
+var dick = ['чёрный',
+    'азиатский',
+    'европейский',
+    'мексиканский',
+    'классический',
     "взрывнаяАрабика",
-    'Маленький',
-    "Нанохуй"];
+    'маленький',
+    "нанохуй"];
 var rand = Math.floor(Math.random() * dick.length);
-
-
-var getDick = document.querySelectorAll('.getDick');
-getDick['.getDick'].onclick = function () {
-    alert('Ваш хуй - ' + dick[rand]);
-}
-
-alert('Ваш хуй - ' + dick[rand]);
+document.getElementById("getDick").childNodes[0].nodeValue = dick[rand];

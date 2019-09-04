@@ -1,4 +1,3 @@
 "use strict";
-
 var date = new Date();
-alert(date);
+document.getElementById("currentProblem").childNodes[0].nodeValue = date;
