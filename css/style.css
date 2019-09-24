@@ -181,10 +181,13 @@ footer {
 }
 
 @media screen and (max-device-width: 1080px) {
-    .wrapper {
-        max-width: 400px;
+    /* .wrapper {
+        max-width: 800px;
     }
     .footer-wrapper {
-        max-width: 400px;
+        max-width: 800px;
+    } */
+    body {
+        font-size: 30pt;
     }
 }
