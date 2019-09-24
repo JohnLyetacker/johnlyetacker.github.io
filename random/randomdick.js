@@ -1,3 +1,4 @@
+"use strict";
 // "use straight";
 let dick = ['чёрный',
     'азиатский',
