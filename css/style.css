@@ -109,8 +109,9 @@ nav a:hover, .albums-description a:hover {
 
 body {
     background-color: gray;
-    font-family: calibri;
+    /* font-family: calibri; */
     font-size: 13pt;
+    font: 14px "Century Gothic", Futura, sans-serif;
 }
 
 p {
@@ -189,5 +190,8 @@ footer {
     } */
     body {
         font-size: 40pt;
+    }
+    nav {
+        font-size: 50pt;
     }
 }
