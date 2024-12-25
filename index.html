@@ -24,8 +24,8 @@
          user-select: none;
          }
          .eye {
-         -webkit-transition: -webkit-transform .8s ease-in-out;
-         transition:transform .8s ease-in-out;
+         -webkit-transition: -webkit-transform .2s ease-in-out;
+         transition:transform .2s ease-in-out;
          display: inline-flex;
          border-radius: 50%;
          overflow: hidden;
@@ -33,13 +33,12 @@
          width: 50px;
          }
          .eye:hover {
-         transform:rotate(360deg);
+         transform: scale(0.9);
          }
          .eye img {
          width:100%;
          height:100%;
          object-fit: cover;
-         }
          }
       </style>
    </head>
@@ -85,12 +84,7 @@
                </div>
             </div>
          </div>
-         <div class="container" style="text-align:center;">
-            <a href='https://youtu.be/8fRXts0a-7Y' target="_blank">
-               <div class="eye">
-                  <img src="pics/dark_eyes_cover.jpeg">
-               </div>
-            </a>
+         <div class="container" style="text-align:center; margin-top: 40px;">
             <a href='https://drive.google.com/file/d/1hVGQZ5aEe1H6aUsanYmy2LD7KjHsUMMw/view' target="_blank">
                <div class="eye">
                   <img src="pics/google_drive_logo.jpg">
@@ -109,11 +103,6 @@
             <a href='https://www.instagram.com/junobreaks?igsh=ZHkwcmdsbGVtZ2c5' target="_blank">
                <div class="eye">
                   <img src="pics/instagram_logo.jpg">
-               </div>
-            </a>
-            <a target="_blank" data-bs-toggle="modal" data-bs-target="#linksListModal" href="#" role="button">
-               <div class="eye">
-                  <img src="pics/different_albums_button_cover.jpg">
                </div>
             </a>
          </div>
