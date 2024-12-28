@@ -1,0 +1,197 @@
+header, .albums-description, .tracks-description, .back-to-albums-description {
+    text-align: center;
+    margin-left: 0px;
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.tracks-description {
+    background-color: rgb(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.albums-description {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+header {
+    margin-top: 5px;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    border: 3px solid #fa7a87;
+}
+
+.albums, nav {
+    border: 3px solid #a3c6fa;
+    background-color: rgb(102, 235, 208);
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    flex-basis: auto;
+    flex-grow: 1;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+nav li {
+    list-style-type: none;
+    width: auto;
+    height: auto;
+    min-width: 0px;
+    max-width: none;
+    min-height: 0px;
+    max-height: none;
+    margin: 15px 0px;
+    padding: 0px 40px;
+    display: block;
+    text-align: inherit;
+    justify-content: center;
+    order: 0;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover, .albums-description a:hover {
+    text-decoration: none;
+    color: rgb(170, 170, 118);
+}
+
+.albums ul {
+    background-color: rgb(0, 0, 0, 0.3);
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    flex-basis: auto;
+    flex-grow: 1;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.albums li {
+    list-style-type: none;
+    width: auto;
+    height: auto;
+    min-width: 0px;
+    max-width: none;
+    min-height: 0px;
+    max-height: none;
+    margin: 15px 0px;
+    padding: 0px 40px;
+    display: block;
+    text-align: inherit;
+    justify-content: center;
+    order: 0;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+body {
+    background-color: gray;
+    /* font-family: calibri; */
+    font-size: 13pt;
+    font: 14px "Century Gothic", Futura, sans-serif;
+}
+
+p {
+    background-color: rgb(0, 0, 0, 0.2);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+    min-width: 0px;
+    max-width: none;
+    min-height: 0px;
+    max-height: none;
+    margin: 0px 0px;
+    display: block;
+    text-align: inherit;
+    align-self: stretch;
+    order: 0;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+.albums a, .back-to-albums-description a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+p a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.albums a:hover, p a:hover {
+    text-decoration: none;
+    color: rgb(56, 56, 10);
+}
+
+footer {
+    /* background-image: url(../svg/gay.svg); */
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    width: auto;
+    height: auto;
+    min-width: 0px;
+    max-width: none;
+    min-height: 0px;
+    max-height: none;
+    margin: 0px 0px;
+    display: block;
+    text-align: inherit;
+    align-self: stretch;
+    order: 0;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+.getDick {
+    cursor: pointer;
+    color: rgb(56, 56, 10);
+}
+
+.footer-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+}
+
+@media screen and (max-device-width: 1080px) {
+    /* .wrapper {
+        max-width: 800px;
+    }
+    .footer-wrapper {
+        max-width: 800px;
+    } */
+    body {
+        font-size: 40pt;
+    }
+    nav {
+        font-size: 50pt;
+    }
+}

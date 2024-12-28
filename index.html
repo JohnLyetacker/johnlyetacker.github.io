@@ -39,6 +39,7 @@
             overflow: hidden;
             height: 10vh;
             margin-left: 5px;
+            margin-right: 5px;
         }
 
         .eye:hover {
@@ -58,6 +59,45 @@
             background-size: cover;
             width: 100vw;
             height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #parent {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+        }
+
+        #music {
+            text-align: center;
+            margin-top: 0px;
+            text-align: center;
+            flex: 1 1 auto;
+        }
+
+        #socials {
+            text-align: center;
+            margin-bottom: 15px;
+            flex: 0 1 auto;
+        }
+
+        #linksListModal .modal-dialog .modal-content .modal-body {
+            background-color: #6a08b3 !important;
+            background: url("pics/juno_breaks_cover.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        #linksListModal0 .modal-dialog .modal-content .modal-body {
+            background-color: #362f65 !important;
+            background: url("pics/ivno_indiges_cover.png");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
             overflow: hidden;
         }
 
@@ -94,21 +134,18 @@
             .main_page_title {
                 font-size: 30pt;
             }
-        }
 
-        #socials {
-            text-align: center;
-            margin-top: 30px;
-            position: fixed;
-            bottom: 0;
+            #music {
+                margin-top: 30px;
+            }
         }
     </style>
 </head>
 
 <body class="bg-image">
     <p class="main_page_title">JUNO WAS MAD</p>
-    <div class="container">
-        <div class='container'>
+    <div class="container" id="parent">
+        <div class="container">
             <!-- <button style="display: flex;margin: 0 auto;" class="btn btn-lg btn-danger" data-bs-toggle="modal"
                 data-bs-target="#songListModal" href="#" role="button">
                 MUSIC
@@ -133,7 +170,7 @@
                                                 <img src="https://sakhalinzoo.ru/upload/photos/5ed9c4b3a4680_1591329971.jpg"
                                                     class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text">Тут название альбома (кликабельно)</p>
+                                                    <p class="card-text">album name goes here</p>
                                                 </div>
                                             </a>
                                         </div>
@@ -144,7 +181,7 @@
                                                 <img src="https://sakhalinzoo.ru/upload/photos/5ed9c4b3a4680_1591329971.jpg"
                                                     class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text">Тут название альбома (кликабельно)</p>
+                                                    <p class="card-text">album name goes here</p>
                                                 </div>
                                             </a>
                                         </div>
@@ -155,7 +192,7 @@
                                                 <img src="https://sakhalinzoo.ru/upload/photos/5ed9c4b3a4680_1591329971.jpg"
                                                     class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text">Тут название альбома (кликабельно)</p>
+                                                    <p class="card-text">album name goes here</p>
                                                 </div>
                                             </a>
                                         </div>
@@ -166,7 +203,7 @@
                                                 <img src="https://sakhalinzoo.ru/upload/photos/5ed9c4b3a4680_1591329971.jpg"
                                                     class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text">Тут название альбома (кликабельно)</p>
+                                                    <p class="card-text">album name goes here</p>
                                                 </div>
                                             </a>
                                         </div>
@@ -183,7 +220,7 @@
                                                 <img src="https://sakhalinzoo.ru/upload/photos/5ed9c4b3a4680_1591329971.jpg"
                                                     class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text">Тут название песни (кликабельно)</p>
+                                                    <p class="card-text">song name goes here</p>
                                                 </div>
                                             </a>
                                         </div>
@@ -194,7 +231,7 @@
                                                 <img src="https://sakhalinzoo.ru/upload/photos/5ed9c4b3a4680_1591329971.jpg"
                                                     class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <p class="card-text">Тут название песни (кликабельно)</p>
+                                                    <p class="card-text">song name goes here</p>
                                                 </div>
                                             </a>
                                         </div>
@@ -210,7 +247,7 @@
                                         <div class="card">
                                             <a href="https://youtube.com">
                                                 <div class="card-body">
-                                                    <p class="card-text">Можно и без изображения</p>
+                                                    <p class="card-text">no image</p>
                                                 </div>
                                             </a>
                                         </div>
@@ -223,7 +260,7 @@
                 </div>
             </div> -->
         </div>
-        <div class="container" id="music" style="text-align:center; margin-top: 0px;">
+        <div class="container" id="music">
             <a target="_blank" data-bs-toggle="modal" data-bs-target="#linksListModal" href="#" role="button">
                 <div class="eye">
                     <img src="pics/juno_breaks_button_cover.jpg">
@@ -266,7 +303,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">different links to an album</h5>
+                        <h5 class="modal-title">juno breaks on:</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -284,7 +321,7 @@
                                 <div class="card" style="width: 100%;">
                                     <div class="card-body">
                                         <a target='_blank'
-                                            href="https://open.spotify.com/album/3iKvBdYDTxSANPndPh2z6y?si=uiSZl8HqQ0mmRUNYsQXeDw&utm_medium=share&utm_source=linktree"
+                                            href="https://open.spotify.com/album/3iKvBdYDTxSANPndPh2z6y?si=mYSGEFrdThWjGmqV_bavZw"
                                             class="stretched-link">Spotify</a>
                                     </div>
                                 </div>
@@ -349,7 +386,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">different links to an album</h5>
+                        <h5 class="modal-title">ivno indiges on:</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -367,15 +404,15 @@
                                 <div class="card" style="width: 100%;">
                                     <div class="card-body">
                                         <a target='_blank'
-                                            href="https://open.spotify.com/album/3iKvBdYDTxSANPndPh2z6y?si=uiSZl8HqQ0mmRUNYsQXeDw&utm_medium=share&utm_source=linktree"
+                                            href="https://open.spotify.com/album/5hEPkOujxTwEci6vxTjuJI?si=Y_0_TLzgQeKIgHk3tXR8YQ"
                                             class="stretched-link">Spotify</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <!--<div class="col">
                                 <div class="card" style="width: 100%;">
                                     <div class="card-body">
-                                        <a target='_blank' href="https://soundcloud.com/junobreaks/sets/juno-breaks"
+                                        <a target='_blank' href="#"
                                             class="stretched-link">SoundCloud</a>
                                     </div>
                                 </div>
@@ -383,16 +420,16 @@
                             <div class="col">
                                 <div class="card" style="width: 100%;">
                                     <div class="card-body">
-                                        <a target='_blank' href="https://junowasmad.bandcamp.com/album/juno-breaks"
+                                        <a target='_blank' href="#"
                                             class="stretched-link">Bandcamp</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                             <div class="col">
                                 <div class="card" style="width: 100%;">
                                     <div class="card-body">
                                         <a target='_blank'
-                                            href="https://music.youtube.com/playlist?list=OLAK5uy_m_xEw0qWl3pr2qIx-PLQkxuArPeD9r27M"
+                                            href="https://music.youtube.com/playlist?list=OLAK5uy_k8m-JZRKiinFat-uI7Enme75uaVdXRupY&si=xST1NsO1jp87_LWR"
                                             class="stretched-link">YouTube Music</a>
                                     </div>
                                 </div>
@@ -401,24 +438,24 @@
                                 <div class="card" style="width: 100%;">
                                     <div class="card-body">
                                         <a target='_blank'
-                                            href="https://geo.music.apple.com/se/album/_/1695436585?app=music&at=1000lHKX&ct=linktree_http&itscg=30200&itsct=lt_m&ls=1&mt=1"
+                                            href="https://music.apple.com/us/album/ivno-indiges-ep/1787003798"
                                             class="stretched-link">Apple Music</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <!--<div class="col">
                                 <div class="card" style="width: 100%;">
                                     <div class="card-body">
                                         <a target='_blank' href="https://www.deezer.com/album/460082815"
                                             class="stretched-link">Deezer</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                             <div class="col">
                                 <div class="card" style="width: 100%;">
                                     <div class="card-body">
                                         <a target='_blank'
-                                            href="https://geo.music.apple.com/se/album/_/1695436585?app=itunes&at=1000lHKX&ct=linktree_http&itscg=30200&itsct=lt_m&ls=1&mt=1"
+                                            href="https://music.apple.com/us/album/ivno-indiges-ep/1787003798"
                                             class="stretched-link">iTunes</a>
                                     </div>
                                 </div>
