@@ -14,6 +14,9 @@
         body {
             margin: 0;
             background-color: #0a000e;
+			height: 100dvh;
+			width: 100dvw;
+			overflow: hidden;
         }
 
         a {
@@ -37,9 +40,8 @@
             display: inline-flex;
             border-radius: 50%;
             overflow: hidden;
+			width: 10vh;
             height: 10vh;
-            margin-left: 5px;
-            margin-right: 5px;
         }
 
         .eye:hover {
@@ -69,12 +71,20 @@
             flex-direction: column;
             flex: 1 1 auto;
         }
+		
+		.buttons-container {
+			display: flex;
+			gap: 16px;
+			align-items: center;
+			justify-content: center;
+		}
 
         #music {
             text-align: center;
             margin-top: 0px;
-            text-align: center;
             flex: 1 1 auto;
+			margin-bottom: auto;
+			align-items: flex-start;
         }
 
         #socials {
@@ -260,7 +270,7 @@
                 </div>
             </div> -->
         </div>
-        <div class="container" id="music">
+        <div class="container buttons-container" id="music">
             <a target="_blank" data-bs-toggle="modal" data-bs-target="#linksListModal" href="#" role="button">
                 <div class="eye">
                     <img src="pics/juno_breaks_button_cover.jpg">
@@ -282,7 +292,7 @@
                 </div>
             </a> -->
         </div>
-        <div class="container" id="socials">
+        <div class="container buttons-container" id="socials">
             <a href='https://bsky.app/profile/junowasmad.bsky.social' target="_blank">
                 <div class="eye">
                     <img src="pics/bluesky_logo.jpg">
