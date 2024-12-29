@@ -14,8 +14,10 @@
         body {
             margin: 0;
             background-color: #0a000e;
-			height: 100dvh;
-			width: 100dvw;
+			height: 100svh;
+			width: 100svw;
+			height: -webkit-fill-available;
+			width: -webkit-fill-available;
 			overflow: hidden;
         }
 
@@ -59,9 +61,6 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
             display: flex;
             flex-direction: column;
         }
