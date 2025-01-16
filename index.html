@@ -14,11 +14,9 @@
         body {
             margin: 0;
             background-color: #0a000e;
-			height: 100svh;
-			width: 100svw;
-			height: -webkit-fill-available;
-			width: -webkit-fill-available;
-			overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
         }
 
         a {
@@ -42,7 +40,7 @@
             display: inline-flex;
             border-radius: 50%;
             overflow: hidden;
-			width: 10vh;
+            width: 10vh;
             height: 10vh;
         }
 
@@ -70,20 +68,20 @@
             flex-direction: column;
             flex: 1 1 auto;
         }
-		
-		.buttons-container {
-			display: flex;
-			gap: 16px;
-			align-items: center;
-			justify-content: center;
-		}
+
+        .buttons-container {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+        }
 
         #music {
             text-align: center;
             margin-top: 0px;
             flex: 1 1 auto;
-			margin-bottom: auto;
-			align-items: flex-start;
+            margin-bottom: auto;
+            align-items: flex-start;
         }
 
         #socials {
@@ -147,11 +145,11 @@
             #music {
                 margin-top: 30px;
             }
-        }
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-            /* Chrome-specific styles */
+
             body {
-            height: 100vh;
+                height: 100svh;
+                width: 100svw;
+                overflow: hidden;
             }
         }
     </style>
